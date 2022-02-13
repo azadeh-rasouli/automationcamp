@@ -75,7 +75,7 @@ driver.execute_script("document.querySelector('table td:last-child').scrollIntoV
 ################### Is displayed #########################
 driver.get("https://www.imdb.com/chart/top/")
 try:
-    driver.find_element('link text', 'Andrei Rublev')
+    driver.find_element('link text', 'Andrei Rublev').is_displayed()
 except:
     pass
 ################### Scroll Using ActionChains #########################
